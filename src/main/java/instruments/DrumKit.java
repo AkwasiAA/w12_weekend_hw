@@ -1,4 +1,7 @@
 package instruments;
 
-public class DrumKit {
-}
+import behaviours.IPlay;
+import behaviours.ISell;
+
+//public class DrumKit extends Instrument implements IPlay, ISell {
+//}

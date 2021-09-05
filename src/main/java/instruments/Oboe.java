@@ -1,4 +1,7 @@
 package instruments;
 
-public class Oboe {
-}
+import behaviours.IPlay;
+import behaviours.ISell;
+
+//public class Oboe extends Instrument implements IPlay, ISell {
+//}
