@@ -1,4 +1,6 @@
 package accessories;
 
-public class KickPedal {
-}
+import behaviours.ISell;
+
+//public class KickPedal implements ISell {
+//}
