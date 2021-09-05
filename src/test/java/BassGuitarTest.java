@@ -10,7 +10,7 @@ public class BassGuitarTest {
 
     @Before
     public void before(){
-        bassGuitar = new BassGuitar("Fender", "String Instrument", "Firemist Gold", "Alder Wood", 716, 916, 4, false);
+        bassGuitar = new BassGuitar("Fender", "Strings", "Firemist Gold", "Alder Wood", 716, 916, 4, false);
     }
 
     @Test
@@ -20,7 +20,7 @@ public class BassGuitarTest {
 
     @Test
     public void hasInstrumentType(){
-        assertEquals("String Instrument", bassGuitar.getType());
+        assertEquals("Strings", bassGuitar.getType());
     }
 
     @Test
