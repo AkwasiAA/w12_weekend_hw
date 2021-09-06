@@ -20,6 +20,10 @@ public class Shop {
         return this.stock;
     }
 
+    public int takeStockInventory(){
+        return this.stock.size();
+    }
+
     public void addStock(ISell item){
         this.stock.add(item);
     }

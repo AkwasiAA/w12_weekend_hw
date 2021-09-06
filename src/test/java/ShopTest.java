@@ -37,7 +37,7 @@ public class ShopTest {
 
     @Test
     public void canGetCurrentStock(){
-        assertEquals(0, shop.getStock());
+        assertEquals(0, shop.takeStockInventory());
     }
 
     @Test
