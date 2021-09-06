@@ -42,11 +42,25 @@ public class ShopTest {
 
     @Test
     public void canAddStock(){
-
+        shop.addStock(bassGuitar);
+        shop.addStock(drumKit);
+        shop.addStock(oboe);
+        shop.addStock(bassGuitarStrings);
+        shop.addStock(kickPedal);
+        shop.addStock(oboeCase);
+        assertEquals(6, shop.takeStockInventory());
     }
 
     @Test
     public void canRemoveStock(){
-
+        shop.addStock(bassGuitar);
+        shop.addStock(drumKit);
+        shop.addStock(oboe);
+        shop.addStock(bassGuitarStrings);
+        shop.addStock(kickPedal);
+        shop.addStock(oboeCase);
+        shop.removeStock(oboe);
+        shop.removeStock(oboeCase);
+        assertEquals(4, shop.takeStockInventory());
     }
 }
