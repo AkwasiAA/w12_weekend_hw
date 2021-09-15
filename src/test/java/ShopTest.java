@@ -63,4 +63,12 @@ public class ShopTest {
         shop.removeStock(oboeCase);
         assertEquals(4, shop.takeStockInventory());
     }
+
+    @Test
+    public void canGetTotalPotentialProfit(){
+        DrumKit drumKit = new DrumKit("Mapex", "Percussion", "Satin Black", "Maple Walnut", 1000, 1499, 5);
+        shop.addStock(drumKit);
+        assertEquals(499, shop.totalPotentialProfit(), 0.01);
+
+    }
 }
